@@ -2,7 +2,7 @@ CFRS[]
 ======
 
 CFRS[] (CFRS Brackets) is an extremely minimal drawing language that
-conists of only five simple commands:
+consists of only six simple commands:
 
 - `C`: Change colour.
 - `F`: Move forward by one cell and paint the new cell.
@@ -76,8 +76,8 @@ A testing version with recent bug fixes is available here:
 [DEMO0]: https://susam.net/cfrs.html#0
 [DEMO3]: https://susam.net/cfrs.html#3
 
-[IMG0]: https://susam.github.io/blob/img/cfr/cfr-demo0-0.1.0.png
-[IMG3]: https://susam.github.io/blob/img/cfr/cfr-demo3-0.1.0.png
+[IMG0]: https://susam.github.io/blob/img/cfrs/cfrs-0.1.0-bars.png
+[IMG3]: https://susam.github.io/blob/img/cfrs/cfrs-0.1.0-rings.png
 
 
 Get Started
@@ -136,7 +136,7 @@ Here are direct links to demos currently available:
 
 If you have an interesting demo that fits in 64 bytes of code, please
 [create an issue][ISSUES] and share it.  If the demo looks very
-interesting, it may be included to the above list of available demos.
+interesting, it may be included in the above list of available demos.
 
 
 Canvas
