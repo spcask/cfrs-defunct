@@ -253,6 +253,9 @@
         while (loop && idx < text.value.length) {
           loop = iterate()
         }
+        if (loop === null) {
+          return
+        }
         if (idx < text.value.length) {
           looperTimer = window.setTimeout(looper, SLEEP_INTERVAL)
         }
@@ -304,7 +307,7 @@
         } else if (op === ']') {
           if (stack.length === 0) {
             error('Unexpected &lsquo;]&rsquo;')
-            return
+            return null
           }
           const [jmpIdx, count] = stack.pop()
           if (count !== 0) {
@@ -315,7 +318,7 @@
           }
         } else {
           error('Unknown operation')
-          return
+          return null
         }
         logOp(ops, execIdx, idx, op, color, x, y, heading)
         ++ops
