@@ -151,6 +151,7 @@
         buttonRotate.addEventListener('click', actionRotate)
         buttonBlock.addEventListener('click', actionBlock)
         buttonRepeat.addEventListener('click', actionRepeat)
+        buttonSleep.addEventListener('click', actionSleep)
         buttonDelete.addEventListener('click', actionDelete)
         buttonHelp.addEventListener('click', actionHelp)
         window.addEventListener('hashchange', actionHash)
@@ -406,6 +407,12 @@
       function actionRepeat (e) {
         e.preventDefault()
         insertText(']')
+        draw()
+      }
+
+      function actionSleep (e) {
+        e.preventDefault()
+        insertText('S')
         draw()
       }
 
