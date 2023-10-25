@@ -208,10 +208,7 @@
         }
         clearHelp()
         log('draw', text.value)
-        if (looperTimer !== null) {
-          window.clearTimeout(looperTimer)
-          looperTimer = null
-        }
+        stopLooper()
         ctx.fillStyle = COLORS[0]
         ctx.fillRect(0, 0, GRID_SIZE * SCALE, GRID_SIZE * SCALE)
         evaluate()
@@ -271,6 +268,13 @@
             status.innerHTML = msg
             lastUpdate = now
           }
+        }
+      }
+
+      function stopLooper () {
+        if (looperTimer !== null) {
+          window.clearTimeout(looperTimer)
+          looperTimer = null
         }
       }
 
@@ -433,6 +437,7 @@
 
       function toggleHelp () {
         if (info.style.display === 'none') {
+          stopLooper()
           canvas.style.display = 'none'
           info.style.display = 'block'
           buttonHelp.title = 'Hide help'
