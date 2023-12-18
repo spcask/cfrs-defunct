@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.2.0 (UNRELEASED)
+------------------
+
+### Changed
+
+- Input field applies text-transform to display code in uppercase.
+
+
 0.1.0 (2023-10-28)
 ------------------
 
