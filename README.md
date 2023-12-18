@@ -366,10 +366,11 @@ More
 See [Andromeda Invaders](https://github.com/susam/invaders), a
 1980s-arcade-style game written using HTML5, Canvas, and Web Audio.
 
+See [FXYT](https://github.com/susam/fxyt), a tiny canvas colouring
+language with stack-based commands.
+
 See [PC Face](https://github.com/susam/pcface), a collection of bitmap
 arrays for rendering CP437 glyphs using IBM PC OEM fonts.
-
-See [CFR](https://github.com/susam/cfr), a static variant of CFRS[].
 
 <!--
 Release Checklist
