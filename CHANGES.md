@@ -8,6 +8,7 @@ Changelog
 
 - Apply text-transform to input field to display code in uppercase.
 - Display duration with exactly one decimal place in the status panel.
+- Change the label of the delete button from `<` to `←` (leftwards arrow).
 
 
 0.1.0 (2023-10-28)
