@@ -40,8 +40,7 @@
         overflow: auto;
       }
       pre {
-        overflow-x: auto;
-        overflow-y: hidden;
+        overflow: auto hidden;
       }
       input {
         color: #ccc;
@@ -267,9 +266,10 @@
           const now = Date.now()
           if (now - lastUpdate > 100 || idx === text.value.length) {
             const ms = now - startTime
-            const rate = ms === 0 ? '-' : Math.round(10000 * ops / ms) / 10
-            const msg = text.value.length + ' bytes, ' + ops + ' ops, ' +
-                (ms / 1000) + ' s, ' + rate + ' ops/s'
+            const bytes = text.value.length + (text.value.length === 1 ? ' byte' : ' bytes')
+            const duration = (ms / 1000).toFixed(1) + ' s'
+            const rate = (ms === 0 ? '-' : (1000 * ops / ms).toFixed(1)) + ' ops/s'
+            const msg = bytes + ', ' + ops + ' ops, ' + duration + ', ' + rate
             status.innerHTML = msg
             lastUpdate = now
           }
