@@ -267,9 +267,10 @@
           if (now - lastUpdate > 100 || idx === text.value.length) {
             const ms = now - startTime
             const bytes = text.value.length + (text.value.length === 1 ? ' byte' : ' bytes')
-            const duration = (ms / 1000).toFixed(1) + ' s'
+            const opss = ops + (ops === 1 ? ' op' : ' ops')
+            const duration = (ms / 1000).toFixed(3) + ' s'
             const rate = (ms === 0 ? '-' : (1000 * ops / ms).toFixed(1)) + ' ops/s'
-            const msg = bytes + ', ' + ops + ' ops, ' + duration + ', ' + rate
+            const msg = bytes + ', ' + opss + ', ' + duration + ', ' + rate
             status.innerHTML = msg
             lastUpdate = now
           }
@@ -629,7 +630,7 @@
           <p>
             <strong>]</strong> - Go back to the beginning of the
             current repeatable block, repeat it once more, and exit
-            the block. &nbsp;A block bounded by
+            the block. A block bounded by
             &lsquo;<strong>[</strong>&rsquo; and
             &lsquo;<strong>]</strong>&rsquo; behaves like a loop that
             runs twice before the block exits.

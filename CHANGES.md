@@ -7,7 +7,7 @@ Changelog
 ### Changed
 
 - Apply text-transform to input field to display code in uppercase.
-- Display duration with exactly one decimal place in the status panel.
+- Display exactly 3 decimal places of duration in the status panel.
 - Change the label of the delete button from `<` to `←` (leftwards arrow).
 
 
