@@ -1,13 +1,13 @@
 Changelog
 =========
 
-0.2.0 (UNRELEASED)
+0.2.0 (2023-12-20)
 ------------------
 
 ### Changed
 
 - Apply text-transform to input field to display code in uppercase.
-- Display exactly 3 decimal places of duration in the status panel.
+- Fix the number of decimal places for duration and rate in the status panel.
 - Change the label of the delete button from `<` to `←` (leftwards arrow).
 
 
@@ -30,3 +30,4 @@ Changelog
 - Typing a digit loads demo if it exists.
 - Digit as URL fragment loads demo if it exists.
 - Distributable links for code not exceeding 64 characters in length.
+
